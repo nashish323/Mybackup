@@ -1,0 +1,514 @@
+## PXE Services // Services-API
+Host pxereader-services-dev
+    IdentityFile ~/.ssh/nexttext-vpc2.pem
+    Hostname 10.199.240.200
+    User ubuntu
+
+Host pxereader-services-qa
+    IdentityFile ~/.ssh/nexttext-vpc2.pem
+    Hostname 10.199.0.73
+    User ubuntu
+
+Host pxereader-services-stack1-pqa1
+    IdentityFile ~/.ssh/nexttext-vpc2.pem
+    Hostname 10.199.0.237
+    User ubuntu
+
+Host pxereader-services-stack1-pqa2
+    IdentityFile ~/.ssh/nexttext-vpc2.pem
+    Hostname 10.199.0.173
+    User ubuntu
+
+Host pxereader-services-stack1-pqa3
+    IdentityFile ~/.ssh/nexttext-vpc2.pem
+    Hostname 10.199.2.155
+    User ubuntu
+
+Host pxereader-services-stack1-pqa4
+    IdentityFile ~/.ssh/nexttext-vpc2.pem
+    Hostname 10.199.2.29
+    User ubuntu
+
+Host pxereader-services-stack1-prod1
+    IdentityFile ~/.ssh/nexttext-vpc2.pem
+    Hostname 10.198.0.94
+    User ubuntu
+
+Host pxereader-services-stack1-prod2
+    IdentityFile ~/.ssh/nexttext-vpc2.pem
+    Hostname 10.198.0.172
+    User ubuntu
+
+Host pxereader-services-stack1-prod3
+    IdentityFile ~/.ssh/nexttext-vpc2.pem
+    Hostname 10.198.2.106
+    User ubuntu
+
+Host pxereader-services-stack1-prod4
+    IdentityFile ~/.ssh/nexttext-vpc2.pem
+    Hostname 10.198.2.55
+    User ubuntu
+
+Host pxereader-services-stack2-prod1
+    IdentityFile ~/.ssh/nexttext-vpc2.pem
+    Hostname 10.198.0.26
+    User ubuntu
+
+Host pxereader-services-stack2-prod2
+    IdentityFile ~/.ssh/nexttext-vpc2.pem
+    Hostname 10.198.0.24
+    User ubuntu
+
+Host pxereader-services-stack2-prod3
+    IdentityFile ~/.ssh/nexttext-vpc2.pem
+    Hostname 10.198.2.35
+    User ubuntu
+
+Host pxereader-services-stack2-prod4
+    IdentityFile ~/.ssh/nexttext-vpc2.pem
+    Hostname 10.198.2.103
+    User ubuntu
+
+#### CM-SERVICES ### 
+Host pxereader-cm-dev
+   # IdentityFile ~/.ssh/55.txt
+   # Hostname 10.199.240.138
+    IdentityFile ~/.ssh/98.txt
+    Hostname 10.199.246.164   
+    User ubuntu
+
+#Host pxereader-cm-qa
+ #   IdentityFile ~/.ssh/55.txt
+  #  Hostname 10.199.6.30
+   # User ubuntu
+
+Host pxereader-cm-qa
+    IdentityFile ~/.ssh/98.txt
+    Hostname 10.199.14.190
+    User ubuntu
+
+#Host pxereader-cm-stack1-pqa1
+ #   IdentityFile ~/.ssh/55.txt
+  #  Hostname 10.199.6.208
+   # User ubuntu
+
+#Host pxereader-cm-stack1-pqa2
+ #   IdentityFile ~/.ssh/55.txt
+  #  Hostname 10.199.6.35
+   # User ubuntu
+
+#Host pxereader-cm-stack1-pqa3
+ #   IdentityFile ~/.ssh/55.txt
+  #  Hostname 10.199.2.165
+  #  User ubuntu
+
+#Host pxereader-cm-stack1-pqa4
+ #   IdentityFile ~/.ssh/55.txt
+ #   Hostname 10.199.2.249
+  #  User ubuntu
+
+Host pxereader-cm-stack1-pqa1
+    IdentityFile ~/.ssh/98.txt
+    Hostname 10.199.0.116
+    User ubuntu
+
+Host pxereader-cm-stack1-pqa2
+    IdentityFile ~/.ssh/98.txt
+    Hostname 10.199.0.82
+    User ubuntu
+
+Host pxereader-cm-stack1-pqa3
+    IdentityFile ~/.ssh/98.txt
+    Hostname 10.199.8.226
+    User ubuntu
+
+Host pxereader-cm-stack1-pqa4
+    IdentityFile ~/.ssh/98.txt
+    Hostname 10.199.11.240
+    User ubuntu
+
+
+#Host pxereader-cm-stack1-prod1
+ #   IdentityFile ~/.ssh/55.txt
+  #  Hostname 10.198.0.146
+   # User ubuntu
+
+#Host pxereader-cm-stack1-prod2
+ #   IdentityFile ~/.ssh/55.txt
+  #  Hostname 10.198.0.194
+   # User ubuntu
+
+#Host pxereader-cm-stack1-prod3
+ #   IdentityFile ~/.ssh/55.txt
+  #  Hostname 10.198.2.147
+   # User ubuntu
+
+#Host pxereader-cm-stack1-prod4
+ #   IdentityFile ~/.ssh/55.txt
+  #  Hostname 10.198.2.25
+   # User ubuntu
+
+#Host pxereader-cm-stack2-prod1
+ #   IdentityFile ~/.ssh/55.txt
+  #  Hostname 10.198.0.44
+   # User ubuntu
+
+Host pxereader-cm-stack1-prod1
+    IdentityFile ~/.ssh/98.txt
+    Hostname 10.198.14.6
+    User ubuntu
+
+Host pxereader-cm-stack1-prod2
+    IdentityFile ~/.ssh/98.txt
+    Hostname 10.198.14.116
+    User ubuntu
+
+Host pxereader-cm-stack1-prod3
+    IdentityFile ~/.ssh/98.txt
+    Hostname 10.198.8.114
+    User ubuntu
+
+Host pxereader-cm-stack1-prod4
+    IdentityFile ~/.ssh/98.txt
+    Hostname 10.198.8.153
+    User ubuntu
+
+
+
+Host pxereader-cm-stack2-prod2
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.198.0.36
+    User ubuntu
+
+Host pxereader-cm-stack2-prod3
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.198.2.227
+    User ubuntu
+
+Host pxereader-cm-stack2-prod4
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.198.2.150
+    User ubuntu
+
+#### CM-Indexer ####
+Host pxereader-cm-indexer-dev
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.199.240.138
+    User ubuntu
+
+Host pxereader-cm-indexer-qa
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.199.6.30
+    User ubuntu
+
+Host pxereader-cm-indexer-stack1-pqa1
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.199.6.208
+    User ubuntu
+
+Host pxereader-cm-indexer-stack1-pqa2
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.199.6.35
+    User ubuntu
+
+Host pxereader-cm-indexer-stack1-pqa3
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.199.2.165
+    User ubuntu
+
+Host pxereader-cm-indexer-stack1-pqa4
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.199.2.249
+    User ubuntu
+
+Host pxereader-cm-indexer-stack1-prod1
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.198.0.146
+    User ubuntu
+
+Host pxereader-cm-indexer-stack1-prod2
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.198.0.194
+    User ubuntu
+
+Host pxereader-cm-indexer-stack1-prod3
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.198.2.147
+    User ubuntu
+
+Host pxereader-cm-indexer-stack1-prod4
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.198.2.25
+    User ubuntu
+
+Host pxereader-cm-indexer-stack2-prod1
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.198.0.44
+    User ubuntu
+
+Host pxereader-cm-indexer-stack2-prod2
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.198.0.36
+    User ubuntu
+
+Host pxereader-cm-indexer-stack2-prod3
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.198.2.227
+    User ubuntu
+
+Host pxereader-cm-indexer-stack2-prod4
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.198.2.150
+    User ubuntu
+
+#### NextextWEB ####
+Host nextextweb-dev
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.199.248.187
+    User ubuntu
+
+Host nextextweb-qa
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.199.10.76
+    User ubuntu
+
+Host nextextweb-stack1-pqa1
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.199.10.185
+    User ubuntu
+
+Host nextextweb-stack1-pqa2
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.199.10.43
+    User ubuntu
+
+Host nextextweb-stack1-pqa3
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.199.8.132
+    User ubuntu
+
+Host nextextweb-stack1-pqa4
+    IdentityFile ~/.ssh/55.txt
+    #Hostname 10.199.8.232
+    Hostname 10.199.11.171
+    User ubuntu
+
+Host nextextweb-stack1-prod1
+    IdentityFile ~/.ssh/55.txt
+    #Hostname 10.198.6.218
+    Hostname 10.198.10.191
+    User ubuntu
+
+Host nextextweb-stack1-prod2
+    IdentityFile ~/.ssh/55.txt
+    #Hostname 10.198.6.53
+    Hostname 10.198.0.36
+    User ubuntu
+
+Host nextextweb-stack1-prod3
+    IdentityFile ~/.ssh/55.txt
+    #Hostname 10.198.2.9
+    Hostname 10.198.8.180
+    User ubuntu
+
+Host nextextweb-stack1-prod4
+    IdentityFile ~/.ssh/55.txt
+    #Hostname 10.198.2.26
+    Hostname 10.198.2.65
+    User ubuntu
+
+Host nextextweb-stack2-prod1
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.198.6.121
+    User ubuntu
+
+Host nextextweb-stack2-prod2
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.198.6.118
+    User ubuntu
+
+Host nextextweb-stack2-prod3
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.198.2.208
+    User ubuntu
+
+Host nextextweb-stack2-prod4
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.198.2.205
+    User ubuntu
+
+#### Nextext-api ####
+
+Host nextext-api-dev
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.199.246.186
+    User ubuntu
+
+Host nextext-api-qa
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.199.10.94
+    User ubuntu
+
+Host nextext-api-stack1-pqa1
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.199.10.109
+    User ubuntu
+
+Host nextext-api-stack1-pqa2
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.199.10.21
+    User ubuntu
+
+Host nextext-api-stack1-pqa3
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.199.8.8
+    User ubuntu
+
+Host nextext-api-stack1-pqa4
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.199.8.66
+    User ubuntu
+
+Host nextext-api-stack1-prod1
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.198.0.237
+    User ubuntu
+
+Host nextext-api-stack1-prod2
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.198.0.79
+    User ubuntu
+
+Host nextext-api-stack1-prod3
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.198.2.252
+    User ubuntu
+
+Host nextext-api-stack1-prod4
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.198.2.110
+    User ubuntu
+
+Host nextext-api-stack2-prod1
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.198.0.98
+    User ubuntu
+
+Host nextext-api-stack2-prod2
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.198.0.191
+    User ubuntu
+
+Host nextext-api-stack2-prod3
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.198.2.119
+    User ubuntu
+
+Host nextext-api-stack2-prod4
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.198.2.42
+    User ubuntu
+
+#### Pxe-Missionbay ####
+
+Host pxe-missionbay-dev
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.199.248.187
+    User ubuntu
+
+Host pxe-missionbay-qa
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.199.10.76
+    User ubuntu
+
+Host pxe-missionbay-stack1-pqa1
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.199.10.185
+    User ubuntu
+
+Host pxe-missionbay-stack1-pqa2
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.199.10.43
+    User ubuntu
+
+Host pxe-missionbay-stack1-pqa3
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.199.8.132
+    User ubuntu
+
+Host pxe-missionbay-stack1-pqa4
+    IdentityFile ~/.ssh/55.txt
+    #Hostname 10.199.8.232
+    Hostname 10.199.11.171
+    User ubuntu
+
+Host pxe-missionbay-stack1-prod1
+    IdentityFile ~/.ssh/55.txt
+    #Hostname 10.198.6.218
+    Hostname 10.198.10.191
+    User ubuntu
+
+Host pxe-missionbay-stack1-prod2
+    IdentityFile ~/.ssh/55.txt
+    #Hostname 10.198.6.53
+    Hostname 10.198.0.36
+    User ubuntu
+
+Host pxe-missionbay-stack1-prod3
+    IdentityFile ~/.ssh/55.txt
+    #Hostname 10.198.2.9
+    Hostname 10.198.8.180
+    User ubuntu
+
+Host pxe-missionbay-stack1-prod4
+    IdentityFile ~/.ssh/55.txt
+    #Hostname 10.198.2.26
+    Hostname 10.198.2.65
+    User ubuntu
+
+Host pxe-missionbay-stack2-prod1
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.198.6.121
+    User ubuntu
+
+Host pxe-missionbay-stack2-prod2
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.198.6.118
+    User ubuntu
+
+Host pxe-missionbay-stack2-prod3
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.198.2.208
+    User ubuntu
+
+Host pxe-missionbay-stack2-prod4
+    IdentityFile ~/.ssh/55.txt
+    Hostname 10.198.2.205
+    User ubuntu
+
+##### GOLDEN GATE    #########
+
+Host gg-dev
+    IdentityFile ~/.ssh/54.txt
+    Hostname dev-use1b-pr-42-golden-01x00x00-0001.prv-openclass.com
+    User ubuntu
+
+Host gg-qa
+    IdentityFile ~/.ssh/55.txt
+    Hostname stg-use1b-pr-55-goldengqa-01x00x00-0001.prv-openclass.com
+    User ubuntu
+
+Host gg-stg
+    IdentityFile ~/.ssh/54.txt
+    Hostname stg-use1b-pr-42-golden-01x00x00-0001.prv-openclass.com
+    User ubuntu
+
+Host gg-oldprod
+    IdentityFile ~/.ssh/54.txt
+    Hostname prd-use1b-pr-42-golden-01x00x00-0001.prv-openclass.com
+    User ubuntu
+
+Host gg-prod
+    IdentityFile ~/.ssh/55.txt
+    Hostname prd-use1b-pr-55-goldeng-01x00x00-0001.prv-openclass.com
+    User ubuntu
