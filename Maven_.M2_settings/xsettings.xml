@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Pearson Software Engineering Tools & Services Template File
+
+    Application: Apache Maven
+    Target Environment: Developer Workstation
+    Template Filename: Developer_Workstation_Template-settings.xml
+    Default Filename: settings.xml
+    Default File Location: $HOME/.m2/settings.xml
+    
+    To use this template file, copy it to the desired location, and rename it 
+    to the default filename specified in this header.
+
+    NOTE: For most template files, you will need to modify it to work in the 
+    target environment. Review this file for any instructions contained in 
+    comments, and modify the copy as specified for your desired target 
+    environment. You may also make changes for your particular usage.
+-->
+
+<!--
+    Please refer to the comments, below, for any applicable instructions 
+    for customizing this file for your usage.
+-->
+
+<!--
+    User-specific configuration for maven. Includes things that should not 
+    be distributed with the pom.xml file, such as developer identity, along with 
+    local settings, like proxy information. The default location for the
+    settings file is ~/.m2/settings.xml 
+-->
+
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <!-- 
+    <proxies>
+        <proxy>
+            <host>my.proxy.host</host>
+        </proxy>
+    </proxies>
+    -->
+
+    <!-- 
+    <pluginGroups>
+        <pluginGroup>org.codehaus.mojo</pluginGroup>
+    </pluginGroups
+    -->
+
+   <mirrors>
+        <mirror>
+            <!--This sends everything else to /all-deps --> 
+            <id>LT-Nexus-Dependencies</id> 
+            <mirrorOf>*</mirrorOf>
+            <url>http://nexus.pearsoncmg.com/nexus/content/groups/all-deps</url>
+        </mirror>
+    </mirrors>
+
+    <profiles>
+        <profile> 
+            <id>LT-Nexus-Dependencies</id>
+            <!--Enable snapshots for the built in central repo to direct -->
+            <!--all requests to nexus via the mirror --> 
+             <pluginRepositories> 
+                <pluginRepository> 
+                    <id>central</id>
+                    <url>http://central</url> 
+                    <releases>
+                        <enabled>true</enabled>
+                        <updatePolicy>always</updatePolicy>
+                    </releases> 
+                    <snapshots>
+                        <enabled>true</enabled>
+                        <updatePolicy>always</updatePolicy>
+                    </snapshots>
+                </pluginRepository> 
+            </pluginRepositories>
+            <properties>
+                <!--
+                DEVELOPER NOTE:
+
+                You must change the <username> and <password> values in the 
+                <server> entry with <id> LT-Nexus-Dependencies located in the 
+                <servers> section of this file.
+
+                Definitions:
+                
+                <buildEnvName> - A string describing the host env 
+                where this settings.xml file is located.
+                
+                <ciUrl> - A valid URL to a CI server.
+                
+                <nexusCommonRepoId> - A string which matches the <id> string of 
+                a <server> entry that holds credentials that are used to access 
+                a Nexus server for artifact dependency resolution and 
+                provisioning. The common <id> used for dependency resolution 
+                at Pearson is LT-Nexus-Releases. NOTE: This ID is NOT used for 
+                artifact deployment!
+
+                <nexusCommonRepoHost> - the fully-qualified hostname of a Nexus 
+                host that will be used for artifact dependency resolution and 
+                provisioning.
+                -->
+                <buildEnvName>Developer Workstation</buildEnvName>
+                <ciUrl>http://jenkins.pearsoncmg.com/view</ciUrl>
+                <nexusCommonRepoId>LT-Nexus-Dependencies</nexusCommonRepoId>
+                <nexusCommonRepoHost>nexus.pearsoncmg.com</nexusCommonRepoHost>
+            </properties>
+        </profile>
+    </profiles>
+
+    <activeProfiles>
+        <activeProfile>LT-Nexus-Dependencies</activeProfile>
+    </activeProfiles>
+    
+    <servers>
+        <server>
+            <!-- ID for Nexus dependency resolution -->
+            <!-- Enter your username and password for the Nexus server, below -->
+            <id>LT-Nexus-Dependencies</id>
+            <username>sean</username>
+            <password>welcome</password>
+            <configuration>
+                <wagonProvider>httpclient</wagonProvider>
+                <httpConfiguration>
+                    <put>
+                        <params>
+                            <param>
+                                <name>http.authentication.preemptive</name>
+                                <value>%b,true</value>
+                            </param>
+                        </params>
+                    </put>
+                </httpConfiguration>
+            </configuration>
+        </server>
+        <server>
+            <!-- ID for Nexus release artifact deployment -->
+            <id>LT-Nexus-Releases</id>
+            <username>sean</username>
+            <password>welcome</password>
+            <configuration>
+                <wagonProvider>httpclient</wagonProvider>
+                <httpConfiguration>
+                    <put>
+                        <params>
+                            <param>
+                                <name>http.authentication.preemptive</name>
+                                <value>%b,true</value>
+                            </param>
+                        </params>
+                    </put>
+                </httpConfiguration>
+            </configuration>
+        </server>
+        <server>
+            <!-- ID for Nexus snapshot artifact deployment -->
+            <id>LT-Nexus-Snapshots</id>
+            <username>sean</username>
+            <password>welcome</password>
+            <configuration>
+                <wagonProvider>httpclient</wagonProvider>
+                <httpConfiguration>
+                    <put>
+                        <params>
+                            <param>
+                                <name>http.authentication.preemptive</name>
+                                <value>%b,true</value>
+                            </param>
+                        </params>
+                    </put>
+                </httpConfiguration>
+            </configuration>
+        </server>
+        <server>
+            <!-- ID for Nexus thirdparty artifact deployment -->
+            <id>LT-Nexus-Thirdparty</id>
+            <username>sean</username>
+            <password>welcome</password>
+            <configuration>
+                <wagonProvider>httpclient</wagonProvider>
+                <httpConfiguration>
+                    <put>
+                        <params>
+                            <param>
+                                <name>http.authentication.preemptive</name>
+                                <value>%b,true</value>
+                            </param>
+                        </params>
+                    </put>
+                </httpConfiguration>
+            </configuration>
+        </server>
+    </servers>
+
+</settings>
+
